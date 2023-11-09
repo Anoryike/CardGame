@@ -1,0 +1,103 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('Back.jpg');
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player {
+    text-align: center;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 0 10px 8px rgba(30, 30, 32, 0.37);
+    border-radius: 25px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+button {
+    background-color: #0004ff;
+    box-shadow: 0 0 10px 8px rgba(108, 108, 238, 0.37);
+    color: #fff;
+    padding: 15px 30px; 
+    border: none; 
+    border-radius: 25px; 
+    font-size: 24px; 
+    cursor: pointer;
+}
+
+.score-container, .total-sum-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px; 
+}
+
+.card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 40px; 
+    animation: slideIn 1s ease-out;
+}
+
+.total-sum{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #ffffff;
+    box-shadow: 0 0 15px 8px rgba(240, 221, 220, 0.37);
+    color: rgb(0, 0, 0);
+    padding: 10px 35px;
+    border-radius: 25px;
+}
+
+.score {
+    font-size: 26px;
+    font-weight: bold;
+    background-color: #0004ff;
+    box-shadow: 0 0 10px 8px rgba(108, 108, 238, 0.37);
+    color: white;
+    padding: 10px 65px;
+    border-radius: 10% / 50%;
+}
+
+@keyframes cardAppear {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.card-appear {
+    animation: cardAppear 1s ease-out;
+}
+
+img {
+    width: 250px;
+    height: auto;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.37);
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: slideIn 1s ease-out;
+}
+
